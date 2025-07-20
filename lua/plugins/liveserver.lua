@@ -1,0 +1,17 @@
+return {
+  {
+    "ngtuonghy/live-server-nvim",
+    event = "VeryLazy",
+    build = ":LiveServerInstall",
+    config = function()
+      require("live-server-nvim").setup({
+        custom = {
+          "--port=4200",
+          "--no-css-inject",
+        },
+        serverPath = vim.fn.stdpath("data") .. "/live-server/",
+        open = "folder",
+      })
+    end,
+  },
+}
