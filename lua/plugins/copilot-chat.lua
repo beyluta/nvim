@@ -7,6 +7,18 @@ return {
     },
     build = "make tiktoken",
     opts = {
+      model = "claude-sonnet-4.5", -- Model to use
+      auto_insert_mode = false, -- Stays in normal mode when opening chat
+      insert_at_end = true, -- Move to end of buffer on insert mode
+      tools = "copilot", -- Tools to use
+      resources = "#buffer", -- Resources to use
+      diff = "unified", -- Diff to use
+      window = {
+        layout = "float", -- Floating window
+        width = 0.8, -- Width of the window
+        height = 0.8, -- Height of the window
+        border = "rounded", -- Box shadow
+      },
       prompts = {
         Tailwind = {
           prompt = [[
