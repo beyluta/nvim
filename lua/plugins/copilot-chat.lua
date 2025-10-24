@@ -9,7 +9,6 @@ return {
     opts = {
       model = "claude-sonnet-4.5", -- Model to use
       auto_insert_mode = false, -- Stays in normal mode when opening chat
-      insert_at_end = true, -- Move to end of buffer on insert mode
       tools = "copilot", -- Tools to use
       resources = "buffer:listed", -- Resources to use
       diff = "unified", -- Diff to use
