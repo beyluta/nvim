@@ -8,10 +8,10 @@ end)
 local wk = require("which-key")
 
 wk.add({
-  { "<leader>a", group = "Artificial Intelligence" },
-  { "<leader>aq", "<cmd>CodeCompanion<cr>", desc = "Quick Prompt" },
-  { "<leader>ac", "<cmd>CodeCompanionChat<cr>", desc = "Chat" },
-  { "<leader>aa", "<cmd>CodeCompanionActions<cr>", desc = "Actions" },
+  { "<leader>a", group = "Artificial Intelligence", icon = "" },
+  { "<leader>aq", "<cmd>CodeCompanion<cr>", desc = "Quick Prompt", icon = "⚡" },
+  { "<leader>ac", "<cmd>CodeCompanionChat<cr>", desc = "Chat", icon = "💬" },
+  { "<leader>aa", "<cmd>CodeCompanionActions<cr>", desc = "Actions", icon = "" },
 })
 
 wk.add({
