@@ -6,6 +6,14 @@ vim.keymap.set("n", "<leader>ls", function()
 end)
 
 local wk = require("which-key")
+
+wk.add({
+  { "<leader>a", group = "Artificial Intelligence" },
+  { "<leader>aq", "<cmd>CodeCompanion<cr>", desc = "Quick Prompt" },
+  { "<leader>ac", "<cmd>CodeCompanionChat<cr>", desc = "Chat" },
+  { "<leader>aa", "<cmd>CodeCompanionActions<cr>", desc = "Actions" },
+})
+
 wk.add({
   { "<leader>v", group = "Visual Studio", icon = "" },
   { "<leader>vr", "<cmd>Dotnet run<cr>", desc = "Run" },
