@@ -19,31 +19,31 @@ return {
       strategies = {
         cmd = {
           adapter = "ollama",
-          model = "qwen3.5:latest",
+          model = "gemma4:12b",
           parameters = {
-            top_k = 20,
+            top_k = 64,
             top_p = 0.95,
-            temperature = 0.6,
+            temperature = 1.0,
             presence_penalty = 0.0,
           },
         },
         chat = {
           adapter = "ollama",
-          model = "qwen3.5:latest",
+          model = "gemma4:12b",
           parameters = {
-            top_k = 20,
+            top_k = 64,
             top_p = 0.95,
-            temperature = 0.6,
+            temperature = 1.0,
             presence_penalty = 0.0,
           },
         },
         inline = {
           adapter = "ollama",
-          model = "qwen3.5:latest",
+          model = "gemma4:12b",
           parameters = {
-            top_k = 20,
+            top_k = 64,
             top_p = 0.95,
-            temperature = 0.6,
+            temperature = 1.0,
             presence_penalty = 0.0,
           },
         },
