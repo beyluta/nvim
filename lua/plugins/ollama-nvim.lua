@@ -6,17 +6,6 @@ return {
     },
     opts = {
       interactions = {
-        chat = {
-          tools = {
-            ["web_search"] = {
-              opts = {
-                adapter = "duckduckgo",
-              },
-            },
-          },
-        },
-      },
-      strategies = {
         cmd = {
           adapter = "ollama",
           model = "gemma4:12b",
@@ -27,7 +16,7 @@ return {
             presence_penalty = 0.0,
           },
         },
-        chat = {
+        inline = {
           adapter = "ollama",
           model = "gemma4:12b",
           parameters = {
@@ -37,7 +26,7 @@ return {
             presence_penalty = 0.0,
           },
         },
-        inline = {
+        chat = {
           adapter = "ollama",
           model = "gemma4:12b",
           parameters = {
